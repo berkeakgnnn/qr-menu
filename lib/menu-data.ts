@@ -120,17 +120,6 @@ export const categories: Category[] = [
           "https://images.unsplash.com/photo-1517701604599-bb29b565090c?w=800&q=80",
       },
       {
-        id: "french-press",
-        name: { tr: "French Press", en: "French Press" },
-        description: {
-          tr: "Tam gövdeli, zengin aroma, 4 dakika demleme",
-          en: "Full bodied, rich aroma, 4 minute brew",
-        },
-        price: 95,
-        image:
-          "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=800&q=80",
-      },
-      {
         id: "filtre",
         name: { tr: "Filtre Kahve", en: "Filter Coffee" },
         description: {
@@ -169,7 +158,7 @@ export const categories: Category[] = [
         },
         price: 100,
         image:
-          "https://images.unsplash.com/photo-1461162480545-8c996cc8f25e?w=800&q=80",
+          "https://images.unsplash.com/photo-1592663527359-cf6642f54cff?w=800&q=80",
       },
       {
         id: "iced-mocha",
