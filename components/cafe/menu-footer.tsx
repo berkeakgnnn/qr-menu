@@ -18,9 +18,14 @@ export function MenuFooter() {
         {t(cafeInfo.hours)}
       </div>
       <div className="w-8 h-px bg-coffee-accent mx-auto my-3" />
-      <div className="text-[9px] text-[#b0a090] font-[family-name:var(--font-inter)]">
-        Powered by QR Menü
-      </div>
+      <a
+        href="https://vexloft.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-[9px] text-[#b0a090] font-[family-name:var(--font-inter)] hover:text-coffee-accent transition-colors"
+      >
+        Vexloft Studio
+      </a>
     </footer>
   );
 }

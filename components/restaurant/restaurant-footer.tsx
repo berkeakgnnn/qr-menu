@@ -19,9 +19,14 @@ export function RestaurantFooter() {
         {t(restaurantInfo.hours)}
       </div>
       <div className="w-5 h-px bg-gold/25 mx-auto my-4" />
-      <div className="text-[8px] text-dark-dim font-[family-name:var(--font-inter)]">
-        Powered by QR Menü
-      </div>
+      <a
+        href="https://vexloft.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-[8px] text-dark-dim font-[family-name:var(--font-inter)] hover:text-gold transition-colors"
+      >
+        Vexloft Studio
+      </a>
     </footer>
   );
 }

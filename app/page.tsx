@@ -38,9 +38,14 @@ export default function Home() {
         <div className="text-[11px] text-dark-muted font-[family-name:var(--font-inter)]">
           Beğendiğiniz şablonu seçin
         </div>
-        <div className="text-[11px] text-gold mt-2 font-[family-name:var(--font-inter)]">
-          İletişime geçin →
-        </div>
+        <a
+          href="https://vexloft.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-[11px] text-gold mt-2 font-[family-name:var(--font-inter)] hover:text-dark-text transition-colors inline-block"
+        >
+          Vexloft Studio →
+        </a>
       </footer>
     </main>
   );
