@@ -9,9 +9,9 @@ export function CategorySection({ category }: { category: Category }) {
   const { t } = useLanguage();
 
   return (
-    <section id={`category-${category.id}`} className="pt-4">
+    <section id={`category-${category.id}`} className="pt-8">
       {/* Category Banner */}
-      <div className="relative h-[120px] mx-5 rounded-2xl overflow-hidden">
+      <div className="relative h-[140px] mx-5 rounded-2xl overflow-hidden">
         <Image
           src={category.banner}
           alt={t(category.name)}

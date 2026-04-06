@@ -18,7 +18,7 @@ export function RestaurantCategory({
     <section id={`category-${category.id}`}>
       {/* Category divider photo — shown between categories */}
       {showBanner && (
-        <div className="relative h-[140px] md:h-[180px] overflow-hidden">
+        <div className="relative h-[160px] md:h-[200px] mt-6 overflow-hidden">
           <Image
             src={category.banner}
             alt={t(category.name)}

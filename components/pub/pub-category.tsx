@@ -18,7 +18,7 @@ export function PubCategorySection({
   return (
     <section id={`category-${category.id}`}>
       {showBanner && (
-        <div className="relative h-[110px] overflow-hidden">
+        <div className="relative h-[140px] mt-6 overflow-hidden">
           <Image
             src={category.banner}
             alt={t(category.name)}
