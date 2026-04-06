@@ -22,7 +22,7 @@ export function TemplateCard({
 }: TemplateCardProps) {
   return (
     <Link href={href} className="block group">
-      <div className="relative h-[200px] md:h-[240px] rounded-xl overflow-hidden">
+      <div className="relative h-[200px] md:h-[280px] lg:h-[320px] rounded-xl overflow-hidden">
         <Image
           src={image}
           alt={name}

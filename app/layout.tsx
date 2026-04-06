@@ -22,8 +22,8 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
-  title: "The Cozy Bean — Menü",
-  description: "Specialty coffee & more — Kadıköy, İstanbul",
+  title: "Vexloft Studio — QR Menü",
+  description: "İşletmenize özel dijital menü çözümleri",
 };
 
 export const viewport: Viewport = {
@@ -41,7 +41,7 @@ export default function RootLayout({
   return (
     <html lang="tr">
       <body
-        className={`${playfair.variable} ${inter.variable} ${cormorant.variable} antialiased bg-[#faf6f0]`}
+        className={`${playfair.variable} ${inter.variable} ${cormorant.variable} antialiased`}
       >
         {children}
       </body>

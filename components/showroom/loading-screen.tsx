@@ -2,7 +2,17 @@
 
 import { useState, useEffect } from "react";
 
-export function LoadingScreen() {
+interface LoadingScreenProps {
+  bg?: string;
+  textColor?: string;
+  accentColor?: string;
+}
+
+export function LoadingScreen({
+  bg = "bg-showroom-bg",
+  textColor = "text-showroom-black",
+  accentColor = "bg-showroom-black",
+}: LoadingScreenProps) {
   const [visible, setVisible] = useState(true);
 
   useEffect(() => {
@@ -14,7 +24,7 @@ export function LoadingScreen() {
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-showroom-bg"
+      className={`fixed inset-0 z-50 flex items-center justify-center ${bg}`}
       style={{ animation: "loadingFadeOut 0.3s ease-out 1.2s forwards" }}
     >
       <div
@@ -24,10 +34,10 @@ export function LoadingScreen() {
         <div className="text-[9px] tracking-[5px] text-showroom-light font-[family-name:var(--font-inter)] font-medium">
           VEXLOFT
         </div>
-        <div className="text-[28px] text-showroom-black mt-3 font-[family-name:var(--font-cormorant)] italic">
+        <div className={`text-[28px] mt-3 font-[family-name:var(--font-cormorant)] italic ${textColor}`}>
           QR Menü
         </div>
-        <div className="w-7 h-0.5 bg-showroom-black mx-auto mt-4" />
+        <div className={`w-7 h-0.5 mx-auto mt-4 ${accentColor}`} />
       </div>
     </div>
   );

@@ -6,9 +6,12 @@ import { RestaurantNav } from "@/components/restaurant/restaurant-nav";
 import { RestaurantCategory } from "@/components/restaurant/restaurant-category";
 import { RestaurantFooter } from "@/components/restaurant/restaurant-footer";
 import { restaurantCategories } from "@/lib/restaurant-data";
+import { LoadingScreen } from "@/components/showroom/loading-screen";
 
 export default function RestaurantPage() {
   return (
+    <>
+    <LoadingScreen bg="bg-dark-bg" textColor="text-gold" accentColor="bg-gold" />
     <LanguageProvider>
       <main className="min-h-screen bg-dark-bg max-w-md md:max-w-2xl mx-auto shadow-[0_0_40px_rgba(0,0,0,0.3)]">
         <RestaurantHeader />
@@ -27,5 +30,6 @@ export default function RestaurantPage() {
         <ScrollAnimator />
       </main>
     </LanguageProvider>
+    </>
   );
 }

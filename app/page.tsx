@@ -8,10 +8,10 @@ export default function Home() {
   return (
     <>
       <LoadingScreen />
-      <main className="min-h-screen bg-showroom-bg max-w-md mx-auto md:max-w-4xl">
+      <main className="min-h-screen bg-showroom-bg max-w-md mx-auto md:max-w-3xl lg:max-w-5xl">
         <ShowroomHeader />
 
-        <div className="px-5 md:px-7 space-y-5 md:space-y-0 md:grid md:grid-cols-2 md:gap-5 pb-6">
+        <div className="px-5 md:px-10 space-y-5 md:space-y-0 md:grid md:grid-cols-2 md:gap-6 pb-6">
           <TemplateCard
             href="/cafe"
             number="01 — CAFE"
@@ -33,7 +33,7 @@ export default function Home() {
         </div>
 
         {/* Features */}
-        <div className="mx-5 md:mx-7 pt-5 pb-2 border-t border-showroom-border">
+        <div className="mx-5 md:mx-10 pt-5 pb-2 border-t border-showroom-border">
           <div className="grid grid-cols-2 gap-x-6 gap-y-4 md:grid-cols-4">
             <div>
               <div className="text-[11px] text-showroom-black font-semibold font-[family-name:var(--font-inter)]">
