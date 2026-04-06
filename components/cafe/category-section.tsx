@@ -35,7 +35,7 @@ export function CategorySection({ category }: { category: Category }) {
       </div>
 
       {/* Product Cards */}
-      <div className="px-5 space-y-2">
+      <div className="px-5 space-y-2 md:grid md:grid-cols-2 md:gap-4 md:space-y-0">
         {category.items.map((item) => (
           <ProductCard key={item.id} item={item} />
         ))}

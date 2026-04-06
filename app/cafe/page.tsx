@@ -10,7 +10,7 @@ import { ScrollAnimator } from "@/components/scroll-animator";
 export default function CafePage() {
   return (
     <LanguageProvider>
-      <main className="min-h-screen bg-warm-cream max-w-md mx-auto shadow-[0_0_40px_rgba(0,0,0,0.1)]">
+      <main className="min-h-screen bg-warm-cream max-w-md md:max-w-2xl mx-auto shadow-[0_0_40px_rgba(0,0,0,0.1)]">
         <MenuHeader />
         <LanguageToggle />
         <CategoryNav />

@@ -10,7 +10,7 @@ import { restaurantCategories } from "@/lib/restaurant-data";
 export default function RestaurantPage() {
   return (
     <LanguageProvider>
-      <main className="min-h-screen bg-dark-bg max-w-md mx-auto shadow-[0_0_40px_rgba(0,0,0,0.3)]">
+      <main className="min-h-screen bg-dark-bg max-w-md md:max-w-2xl mx-auto shadow-[0_0_40px_rgba(0,0,0,0.3)]">
         <RestaurantHeader />
         <div className="flex justify-center py-3.5 bg-[#0d0d0d] border-b border-dark-border">
           <LanguageToggle variant="dark" />

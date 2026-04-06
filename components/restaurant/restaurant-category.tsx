@@ -18,7 +18,7 @@ export function RestaurantCategory({
     <section id={`category-${category.id}`}>
       {/* Category divider photo — shown between categories */}
       {showBanner && (
-        <div className="relative h-[140px] overflow-hidden">
+        <div className="relative h-[140px] md:h-[180px] overflow-hidden">
           <Image
             src={category.banner}
             alt={t(category.name)}
@@ -35,7 +35,7 @@ export function RestaurantCategory({
       )}
 
       {/* Category title — always shown */}
-      <div className="py-6 text-center">
+      <div className="py-6 md:py-8 text-center">
         <div className="text-[9px] tracking-[5px] text-gold font-[family-name:var(--font-inter)] uppercase">
           {t(category.name)}
         </div>

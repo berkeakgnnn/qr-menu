@@ -12,7 +12,7 @@ export function ProductCard({ item }: { item: MenuItem }) {
       data-animate
       className="bg-white rounded-2xl overflow-hidden shadow-[0_2px_12px_rgba(44,24,16,0.08)] opacity-0"
     >
-      <div className="relative h-[180px]">
+      <div className="relative h-[180px] md:h-[200px]">
         <Image
           src={item.image}
           alt={t(item.name)}

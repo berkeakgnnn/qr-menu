@@ -7,7 +7,7 @@ export function RestaurantItem({ item }: { item: MenuItem }) {
   const { t } = useLanguage();
 
   return (
-    <div data-animate className="px-6 py-4 border-b border-[#151515] opacity-0">
+    <div data-animate className="px-6 md:px-10 py-4 border-b border-[#151515] opacity-0">
       <div className="flex justify-between items-baseline gap-2">
         <h3 className="text-[17px] text-dark-text font-[family-name:var(--font-cormorant)] italic">
           {t(item.name)}
