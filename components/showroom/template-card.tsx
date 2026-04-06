@@ -1,70 +1,56 @@
+import Image from "next/image";
 import Link from "next/link";
 
 interface TemplateCardProps {
   href: string;
+  number: string;
   name: string;
-  label: string;
+  type: string;
   description: string;
-  gradient: string;
-  labelColor: string;
-  buttonBg: string;
-  buttonText: string;
-  borderColor?: string;
+  image: string;
+  brightness?: string;
 }
 
 export function TemplateCard({
   href,
+  number,
   name,
-  label,
+  type,
   description,
-  gradient,
-  labelColor,
-  buttonBg,
-  buttonText,
-  borderColor,
+  image,
+  brightness = "brightness-[0.45]",
 }: TemplateCardProps) {
   return (
-    <Link href={href} className="block">
-      <div
-        className="rounded-2xl overflow-hidden border transition-transform hover:scale-[1.02]"
-        style={{ borderColor: borderColor || "#222" }}
-      >
-        {/* Preview area */}
-        <div
-          className="h-[120px] flex items-center justify-center"
-          style={{ background: gradient }}
-        >
-          <div className="text-center text-dark-text">
-            <div className="text-[18px] font-[family-name:var(--font-cormorant)] italic">
-              {name}
+    <Link href={href} className="block group">
+      <div className="relative h-[200px] md:h-[240px] rounded-xl overflow-hidden">
+        <Image
+          src={image}
+          alt={name}
+          fill
+          className={`object-cover ${brightness} group-hover:scale-105 transition-transform duration-500`}
+          sizes="(max-width: 768px) 100vw, 50vw"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+        <div className="absolute inset-0 flex flex-col justify-end p-5">
+          <div className="text-[8px] tracking-[2px] text-white/40 font-[family-name:var(--font-inter)]">
+            {number}
+          </div>
+          <div className="text-[22px] text-white font-[family-name:var(--font-cormorant)] italic mt-0.5">
+            {name}
+          </div>
+          <div className="flex justify-between items-center mt-1.5">
+            <div className="text-[10px] text-white/60 font-[family-name:var(--font-inter)]">
+              {type}
             </div>
-            <div
-              className="text-[8px] tracking-[2px] mt-1 font-[family-name:var(--font-inter)]"
-              style={{ color: labelColor }}
-            >
-              {label}
+            <div className="text-[9px] text-white font-medium tracking-[1px] font-[family-name:var(--font-inter)] group-hover:tracking-[2px] transition-all">
+              {"INCELE \u2192"}
             </div>
           </div>
         </div>
-
-        {/* Info area */}
-        <div className="p-4 bg-[#161616]">
-          <div className="flex justify-between items-center">
-            <div>
-              <div className="text-[12px] text-dark-text font-semibold font-[family-name:var(--font-inter)]">
-                {description.split(" — ")[0]}
-              </div>
-              <div className="text-[10px] text-dark-muted mt-0.5 font-[family-name:var(--font-inter)]">
-                {description.split(" — ")[1]}
-              </div>
-            </div>
-            <div
-              className="px-4 py-1.5 rounded-full text-[9px] font-bold font-[family-name:var(--font-inter)] tracking-wide"
-              style={{ background: buttonBg, color: buttonText }}
-            >
-              İNCELE →
-            </div>
-          </div>
+      </div>
+      <div className="mt-2 mb-1">
+        <div className="text-[10px] text-showroom-light font-[family-name:var(--font-inter)]">
+          {description}
         </div>
       </div>
     </Link>

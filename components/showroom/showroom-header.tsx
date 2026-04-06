@@ -1,14 +1,15 @@
 export function ShowroomHeader() {
   return (
-    <header className="pt-14 pb-6 px-6 text-center">
-      <div className="text-[10px] tracking-[5px] text-gold font-[family-name:var(--font-inter)] font-semibold">
-        QR MENÜ
+    <header className="pt-12 pb-7 px-7 md:pt-16 md:pb-10 md:text-center">
+      <div className="text-[9px] tracking-[4px] text-showroom-light font-[family-name:var(--font-inter)] font-medium">
+        VEXLOFT STUDIO
       </div>
-      <h1 className="text-[28px] text-dark-text mt-3 font-[family-name:var(--font-cormorant)] italic">
-        Şablonlarımız
+      <h1 className="text-[32px] md:text-[40px] text-showroom-black mt-3 font-[family-name:var(--font-cormorant)] font-normal leading-tight">
+        Digital<br className="md:hidden" /> Menu Solutions
       </h1>
-      <p className="text-[12px] text-dark-muted mt-3 max-w-[260px] mx-auto leading-relaxed font-[family-name:var(--font-inter)]">
-        İşletmenize özel QR menü çözümleri. Aşağıdan şablonları canlı inceleyin.
+      <div className="w-7 h-0.5 bg-showroom-black mt-4 mb-4 md:mx-auto" />
+      <p className="text-[12px] text-showroom-gray leading-relaxed max-w-[280px] font-[family-name:var(--font-inter)] md:mx-auto">
+        İşletmenize özel tasarlanmış QR menü şablonları. Aşağıdan canlı inceleyin.
       </p>
     </header>
   );

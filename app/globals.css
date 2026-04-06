@@ -18,6 +18,13 @@
   --color-dark-subtle: #444444;
   --color-dark-dim: #333333;
 
+  --color-showroom-bg: #fafafa;
+  --color-showroom-black: #111111;
+  --color-showroom-dark: #555555;
+  --color-showroom-gray: #777777;
+  --color-showroom-light: #999999;
+  --color-showroom-border: #eeeeee;
+
   --font-playfair: var(--font-playfair);
   --font-inter: var(--font-inter);
   --font-cormorant: var(--font-cormorant);
@@ -36,6 +43,16 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+@keyframes loadingFadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes loadingFadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; pointer-events: none; }
 }
 
 /* Hide scrollbar on category nav */

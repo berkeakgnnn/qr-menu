@@ -1,52 +1,87 @@
 import { ShowroomHeader } from "@/components/showroom/showroom-header";
 import { TemplateCard } from "@/components/showroom/template-card";
+import { LoadingScreen } from "@/components/showroom/loading-screen";
+import { cafeInfo } from "@/lib/menu-data";
+import { restaurantInfo } from "@/lib/restaurant-data";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-dark-bg max-w-md mx-auto">
-      <ShowroomHeader />
+    <>
+      <LoadingScreen />
+      <main className="min-h-screen bg-showroom-bg max-w-md mx-auto md:max-w-4xl">
+        <ShowroomHeader />
 
-      <div className="px-4 space-y-4 pb-6">
-        {/* Cafe Template */}
-        <TemplateCard
-          href="/cafe"
-          name="The Cozy Bean"
-          label="CAFE ŞABLONU"
-          description="Kafe & Kahve Dükkanı — Sıcak, vintage, cozy tema"
-          gradient="linear-gradient(135deg, #3e2723, #6d4c41)"
-          labelColor="#d4a574"
-          buttonBg="#8a7560"
-          buttonText="#0f0f0f"
-        />
-
-        {/* Restaurant Template */}
-        <TemplateCard
-          href="/restaurant"
-          name="Maison Élégante"
-          label="RESTORAN ŞABLONU"
-          description="Fine Dining Restoran — Lüks, koyu tema, altın aksan"
-          gradient="linear-gradient(135deg, #0d0d0d, #1a1a1a)"
-          labelColor="#c9a96e"
-          buttonBg="#c9a96e"
-          buttonText="#0d0d0d"
-          borderColor="#c9a96e33"
-        />
-      </div>
-
-      {/* Footer */}
-      <footer className="py-8 px-6 text-center border-t border-dark-border">
-        <div className="text-[11px] text-dark-muted font-[family-name:var(--font-inter)]">
-          Beğendiğiniz şablonu seçin
+        <div className="px-5 md:px-7 space-y-5 md:space-y-0 md:grid md:grid-cols-2 md:gap-5 pb-6">
+          <TemplateCard
+            href="/cafe"
+            number="01 — CAFE"
+            name="The Cozy Bean"
+            type="Kafe & Kahve Dükkanı"
+            description="Sıcak tonlar, vintage atmosfer"
+            image={cafeInfo.heroImage}
+            brightness="brightness-[0.5]"
+          />
+          <TemplateCard
+            href="/restaurant"
+            number="02 — RESTORAN"
+            name="Maison Élégante"
+            type="Fine Dining Restoran"
+            description="Koyu tema, altın aksentler"
+            image={restaurantInfo.heroImage}
+            brightness="brightness-[0.35]"
+          />
         </div>
-        <a
-          href="https://vexloft.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-[11px] text-gold mt-2 font-[family-name:var(--font-inter)] hover:text-dark-text transition-colors inline-block"
-        >
-          Vexloft Studio →
-        </a>
-      </footer>
-    </main>
+
+        {/* Features */}
+        <div className="mx-5 md:mx-7 pt-5 pb-2 border-t border-showroom-border">
+          <div className="grid grid-cols-2 gap-x-6 gap-y-4 md:grid-cols-4">
+            <div>
+              <div className="text-[11px] text-showroom-black font-semibold font-[family-name:var(--font-inter)]">
+                Mobil Uyumlu
+              </div>
+              <div className="text-[9px] text-showroom-light mt-0.5 font-[family-name:var(--font-inter)]">
+                Tüm cihazlarda kusursuz
+              </div>
+            </div>
+            <div>
+              <div className="text-[11px] text-showroom-black font-semibold font-[family-name:var(--font-inter)]">
+                Çoklu Dil
+              </div>
+              <div className="text-[9px] text-showroom-light mt-0.5 font-[family-name:var(--font-inter)]">
+                TR / EN dil desteği
+              </div>
+            </div>
+            <div>
+              <div className="text-[11px] text-showroom-black font-semibold font-[family-name:var(--font-inter)]">
+                Anında Güncelleme
+              </div>
+              <div className="text-[9px] text-showroom-light mt-0.5 font-[family-name:var(--font-inter)]">
+                Gerçek zamanlı düzenleme
+              </div>
+            </div>
+            <div>
+              <div className="text-[11px] text-showroom-black font-semibold font-[family-name:var(--font-inter)]">
+                QR ile Erişim
+              </div>
+              <div className="text-[9px] text-showroom-light mt-0.5 font-[family-name:var(--font-inter)]">
+                Tek tarama ile ulaşım
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Footer */}
+        <footer className="py-8 px-5 text-center">
+          <a
+            href="https://vexloft.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[9px] text-[#bbb] tracking-[1px] font-[family-name:var(--font-inter)] hover:text-showroom-black transition-colors"
+          >
+            VEXLOFT STUDIO
+          </a>
+        </footer>
+      </main>
+    </>
   );
 }
