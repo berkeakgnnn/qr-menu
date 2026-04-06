@@ -13,7 +13,7 @@ export const restaurantInfo: CafeInfo = {
     en: "18:00 – 00:00 | Closed on Mondays",
   },
   heroImage:
-    "https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=1200&q=80",
+    "https://images.unsplash.com/photo-1552566626-52f8b828add9?w=1200&q=80",
 };
 
 export const restaurantCategories: Category[] = [
