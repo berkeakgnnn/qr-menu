@@ -9,8 +9,18 @@
   --color-warm-beige: #f0e8da;
   --color-warm-cream: #faf6f0;
 
+  --color-gold: #c9a96e;
+  --color-dark-bg: #0a0a0a;
+  --color-dark-card: #111111;
+  --color-dark-border: #1a1a1a;
+  --color-dark-text: #f5f0eb;
+  --color-dark-muted: #555555;
+  --color-dark-subtle: #444444;
+  --color-dark-dim: #333333;
+
   --font-playfair: var(--font-playfair);
   --font-inter: var(--font-inter);
+  --font-cormorant: var(--font-cormorant);
 }
 
 @utility fade-in {
