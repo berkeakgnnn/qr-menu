@@ -25,6 +25,16 @@
   --color-showroom-light: #999999;
   --color-showroom-border: #eeeeee;
 
+  --color-pub-bg: #1c1714;
+  --color-pub-card: #231e1a;
+  --color-pub-amber: #d4a04a;
+  --color-pub-text: #f2e8d5;
+  --color-pub-muted: #6a5a4a;
+  --color-pub-dim: #5a4a3a;
+  --color-pub-border: #2a2320;
+  --color-pub-card-border: #2e2824;
+  --color-pub-dot: #3a3028;
+
   --font-playfair: var(--font-playfair);
   --font-inter: var(--font-inter);
   --font-cormorant: var(--font-cormorant);
