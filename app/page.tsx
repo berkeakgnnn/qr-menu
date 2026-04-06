@@ -43,37 +43,37 @@ export default function Home() {
         </div>
 
         {/* Features */}
-        <div className="mx-5 md:mx-12 lg:mx-20 pt-5 pb-2 border-t border-showroom-border">
-          <div className="grid grid-cols-2 gap-x-6 gap-y-4 md:grid-cols-4">
+        <div className="mx-5 md:mx-12 lg:mx-20 pt-8 md:pt-12 pb-4 border-t border-showroom-border">
+          <div className="grid grid-cols-2 gap-x-8 gap-y-6 md:grid-cols-4 md:gap-x-12">
             <div>
-              <div className="text-[11px] text-showroom-black font-semibold font-[family-name:var(--font-inter)]">
+              <div className="text-sm md:text-base text-showroom-black font-semibold font-[family-name:var(--font-inter)]">
                 Mobil Uyumlu
               </div>
-              <div className="text-[9px] text-showroom-light mt-0.5 font-[family-name:var(--font-inter)]">
+              <div className="text-xs md:text-sm text-showroom-gray mt-1 font-[family-name:var(--font-inter)]">
                 Tüm cihazlarda kusursuz
               </div>
             </div>
             <div>
-              <div className="text-[11px] text-showroom-black font-semibold font-[family-name:var(--font-inter)]">
+              <div className="text-sm md:text-base text-showroom-black font-semibold font-[family-name:var(--font-inter)]">
                 Çoklu Dil
               </div>
-              <div className="text-[9px] text-showroom-light mt-0.5 font-[family-name:var(--font-inter)]">
+              <div className="text-xs md:text-sm text-showroom-gray mt-1 font-[family-name:var(--font-inter)]">
                 TR / EN dil desteği
               </div>
             </div>
             <div>
-              <div className="text-[11px] text-showroom-black font-semibold font-[family-name:var(--font-inter)]">
+              <div className="text-sm md:text-base text-showroom-black font-semibold font-[family-name:var(--font-inter)]">
                 Anında Güncelleme
               </div>
-              <div className="text-[9px] text-showroom-light mt-0.5 font-[family-name:var(--font-inter)]">
+              <div className="text-xs md:text-sm text-showroom-gray mt-1 font-[family-name:var(--font-inter)]">
                 Gerçek zamanlı düzenleme
               </div>
             </div>
             <div>
-              <div className="text-[11px] text-showroom-black font-semibold font-[family-name:var(--font-inter)]">
+              <div className="text-sm md:text-base text-showroom-black font-semibold font-[family-name:var(--font-inter)]">
                 QR ile Erişim
               </div>
-              <div className="text-[9px] text-showroom-light mt-0.5 font-[family-name:var(--font-inter)]">
+              <div className="text-xs md:text-sm text-showroom-gray mt-1 font-[family-name:var(--font-inter)]">
                 Tek tarama ile ulaşım
               </div>
             </div>
