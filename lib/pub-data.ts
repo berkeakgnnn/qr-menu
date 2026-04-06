@@ -91,7 +91,7 @@ export const pubCategories: PubCategory[] = [
     banner: "https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=1200&q=80",
     layout: "grid",
     foods: [
-      { id: "fishandchips", name: { tr: "Fish & Chips", en: "Fish & Chips" }, description: { tr: "Bira hamurlu morina, el yapımı patates, tartare sos", en: "Beer battered cod, hand-cut chips, tartare sauce" }, price: 240, image: "https://images.unsplash.com/photo-1644116516018-5d3e17a9e2c4?w=800&q=80" },
+      { id: "fishandchips", name: { tr: "Fish & Chips", en: "Fish & Chips" }, description: { tr: "Bira hamurlu morina, el yapımı patates, tartare sos", en: "Beer battered cod, hand-cut chips, tartare sauce" }, price: 240, image: "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=800&q=80" },
       { id: "shepherdspie", name: { tr: "Shepherd's Pie", en: "Shepherd's Pie" }, description: { tr: "Kuzu kıyma, sebze ragu, patates püre grateni", en: "Lamb mince, vegetable ragout, potato gratin" }, price: 220, image: "https://images.unsplash.com/photo-1476718406336-bb5a9690ee2a?w=800&q=80" },
       { id: "bangersmash", name: { tr: "Bangers & Mash", en: "Bangers & Mash" }, description: { tr: "İrlanda sosisleri, patates püresi, soğan sosu", en: "Irish sausages, mashed potatoes, onion gravy" }, price: 200, image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=80" },
       { id: "irishstew", name: { tr: "Irish Stew", en: "Irish Stew" }, description: { tr: "Kuzu, patates, havuç, soğan. Geleneksel tarif", en: "Lamb, potatoes, carrots, onions. Traditional recipe" }, price: 210, image: "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=800&q=80" },
@@ -116,7 +116,7 @@ export const pubCategories: PubCategory[] = [
     layout: "grid",
     foods: [
       { id: "nachos", name: { tr: "Loaded Nachos", en: "Loaded Nachos" }, description: { tr: "Cheddar, jalapeno, salsa, guacamole, ekşi krema", en: "Cheddar, jalapeño, salsa, guacamole, sour cream" }, price: 180, image: "https://images.unsplash.com/photo-1513456852971-30c0b8199d4d?w=800&q=80" },
-      { id: "wings", name: { tr: "Buffalo Wings", en: "Buffalo Wings" }, description: { tr: "8 adet tavuk kanat, buffalo sos, ranch dip", en: "8 chicken wings, buffalo sauce, ranch dip" }, price: 190, image: "https://images.unsplash.com/photo-1608039829572-9b0ba41a839b?w=800&q=80" },
+      { id: "wings", name: { tr: "Buffalo Wings", en: "Buffalo Wings" }, description: { tr: "8 adet tavuk kanat, buffalo sos, ranch dip", en: "8 chicken wings, buffalo sauce, ranch dip" }, price: 190, image: "https://images.unsplash.com/photo-1527477396000-e27163b481c2?w=800&q=80" },
       { id: "onionrings", name: { tr: "Onion Rings", en: "Onion Rings" }, description: { tr: "Bira hamurlu soğan halkası, chipotle mayo", en: "Beer battered onion rings, chipotle mayo" }, price: 120, image: "https://images.unsplash.com/photo-1581006852262-e4307cf6283a?w=800&q=80" },
       { id: "mozzsticks", name: { tr: "Mozzarella Sticks", en: "Mozzarella Sticks" }, description: { tr: "Çıtır mozzarella çubukları, marinara sos", en: "Crispy mozzarella sticks, marinara sauce" }, price: 140, image: "https://images.unsplash.com/photo-1531749668029-2db88e4276c7?w=800&q=80" },
     ],

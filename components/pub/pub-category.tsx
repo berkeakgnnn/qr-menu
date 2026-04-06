@@ -18,27 +18,27 @@ export function PubCategorySection({
   return (
     <section id={`category-${category.id}`}>
       {showBanner && (
-        <div className="relative h-[140px] mt-6 overflow-hidden">
+        <div className="relative h-[180px] md:h-[220px] mt-10 overflow-hidden">
           <Image
             src={category.banner}
             alt={t(category.name)}
             fill
-            className="object-cover brightness-[0.2] saturate-[0.7]"
+            className="object-cover brightness-[0.25] saturate-[0.7]"
             sizes="100vw"
           />
           <div className="absolute inset-0 flex items-center justify-center">
-            <span className="text-[9px] tracking-[5px] text-pub-amber font-[family-name:var(--font-inter)] font-medium uppercase">
+            <span className="text-sm md:text-base tracking-[5px] text-pub-amber font-[family-name:var(--font-inter)] font-medium uppercase">
               {t(category.name)}
             </span>
           </div>
         </div>
       )}
 
-      <div className="py-5 text-center">
-        <div className="text-[9px] tracking-[5px] text-pub-amber font-[family-name:var(--font-inter)] font-medium uppercase">
+      <div className="py-6 md:py-8 text-center">
+        <div className="text-xs md:text-sm tracking-[5px] text-pub-amber font-[family-name:var(--font-inter)] font-medium uppercase">
           {t(category.name)}
         </div>
-        <div className="w-6 h-px bg-pub-amber/20 mx-auto mt-2" />
+        <div className="w-8 h-px bg-pub-amber/25 mx-auto mt-3" />
       </div>
 
       {category.layout === "chalkboard" && category.drinks && (
